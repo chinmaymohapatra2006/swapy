@@ -1,7 +1,7 @@
 ﻿<div align="center">
   <h1>Swapy - The AI-Powered Skill-Swap Platform 🔄</h1>
   <p><i>Designed to teach. Built to learn.</i></p>
-  
+
   ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
   ![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
   ![Next.js](https://img.shields.io/badge/Next.js_15-black?style=for-the-badge&logo=next.js&logoColor=white)
@@ -10,8 +10,13 @@
 
 ---
 
-## 🚀 Overview
+## 🚀 Overview & Description
 **Swapy** is an innovative platform built for a hackathon that matches users for peer-to-peer skill swapping. Instead of static courses, Swapy uses smart tag assessments to pair mentors and learners effectively, creating a dynamic, hands-on collaborative environment.
+
+**How it works:**
+By bridging the gap between individuals with complementary skills, Swapy creates a collaborative ecosystem where learning is active, engaging, and mutually beneficial. Whether you are a backend developer looking to understand UI/UX design, or a data scientist seeking to master frontend frameworks, our AI-powered matchmaking algorithm analyzes your skills to pair you with the ideal mentor or learner. 
+
+Say goodbye to static, one-way video tutorials. Say hello to interactive, real-time skill swapping.
 
 ## ✨ Key Features
 - **🤖 Intelligent Matching:** Evolving profiles automatically match peers based on what they can teach and what they want to learn.
