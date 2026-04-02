@@ -1,0 +1,157 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-heading: "Instrument Serif", serif;
+  --font-body: "Barlow", sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 213 45% 67%;
+    --foreground: 0 0% 100%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 213 45% 67%;
+    --border: 0 0% 100% / 0.2;
+    --radius: 9999px;
+  }
+
+  body {
+    background-color: black;
+    color: white;
+    font-family: var(--font-body);
+    font-weight: 300;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-style: italic;
+    color: white;
+    font-weight: 400;
+  }
+  
+  * {
+    border-color: var(--border);
+  }
+}
+
+@layer components {
+  .liquid-glass {
+    background: rgba(255, 255, 255, 0.01);
+    background-blend-mode: luminosity;
+    backdrop-filter: blur(4px);
+    border: none;
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .liquid-glass::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1.4px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0.15) 20%, rgba(255,255,255,0) 40%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.15) 80%, rgba(255,255,255,0.45) 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  .liquid-glass-strong {
+    background: rgba(255, 255, 255, 0.01);
+    background-blend-mode: luminosity;
+    backdrop-filter: blur(50px);
+    border: none;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.05), inset 0 1px 1px rgba(255,255,255,0.15);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .liquid-glass-strong::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1.4px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.2) 20%, rgba(255,255,255,0) 40%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.2) 80%, rgba(255,255,255,0.5) 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+}
+
+/* LIGHT THEME OVERRIDES */
+html.light-theme {
+  background-color: white;
+}
+html.light-theme body {
+  background-color: white;
+  color: black;
+}
+html.light-theme h1, html.light-theme h2, html.light-theme h3, html.light-theme h4, html.light-theme h5, html.light-theme h6 {
+  color: black;
+}
+html.light-theme .text-white { color: black !important; }
+html.light-theme .text-white\/90 { color: rgba(0,0,0,0.9) !important; }
+html.light-theme .text-white\/80 { color: rgba(0,0,0,0.8) !important; }
+html.light-theme .text-white\/60 { color: rgba(0,0,0,0.6) !important; }
+html.light-theme .text-white\/50 { color: rgba(0,0,0,0.5) !important; }
+html.light-theme .text-white\/40 { color: rgba(0,0,0,0.4) !important; }
+html.light-theme .text-white\/20 { color: rgba(0,0,0,0.2) !important; }
+html.light-theme .text-black { color: white !important; }
+html.light-theme .bg-black { background-color: white !important; }
+html.light-theme .bg-white { background-color: black !important; }
+html.light-theme .bg-black\/5 { background-color: rgba(255,255,255,0.5) !important; }
+html.light-theme .bg-black\/30 { background-color: rgba(255,255,255,1) !important; }
+html.light-theme .bg-white\/10 { background-color: rgba(0,0,0,0.05) !important; }
+html.light-theme .border-white\/5 { border-color: rgba(0,0,0,0.1) !important; }
+html.light-theme .border-white\/10 { border-color: rgba(0,0,0,0.15) !important; }
+html.light-theme .border-white\/20 { border-color: rgba(0,0,0,0.2) !important; }
+html.light-theme .liquid-glass, html.light-theme .liquid-glass-strong {
+  background: rgba(0, 0, 0, 0.03) !important;
+  border: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05) !important;
+}
+html.light-theme .liquid-glass::before, html.light-theme .liquid-glass-strong::before {
+  display: none;
+}
+
+/* LIGHT THEME ADDITIONAL FIXES */
+html.light-theme .from-black {
+  --tw-gradient-from: #fff !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0)) !important;
+}
+html.light-theme .to-black {
+  --tw-gradient-to: #fff !important;
+}
+html.light-theme .hover\:text-white:hover {
+  color: black !important;
+}
+html.light-theme .hover\:text-white\/80:hover {
+  color: rgba(0,0,0,0.8) !important;
+}
+html.light-theme .hover\:bg-white\/10:hover {
+  background-color: rgba(0,0,0,0.05) !important;
+}
+html.light-theme .hover\:bg-white\/90:hover {
+  background-color: rgba(0,0,0,0.9) !important;
+}
+html.light-theme .selection\:bg-white\/20 *::selection {
+  background-color: rgba(0,0,0,0.2) !important;
+}
+html.light-theme video {
+  mix-blend-mode: multiply;
+  opacity: 0.2;
+}
+html.light-theme video {
+  mix-blend-mode: multiply !important;
+  opacity: 0.3 !important;
+}
+
+html.light-theme img.mix-blend-screen {
+  mix-blend-mode: multiply !important;
+  opacity: 0.9 !important;
+}
