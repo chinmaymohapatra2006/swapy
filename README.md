@@ -48,15 +48,15 @@ npm install
 
 # 3. Start the development server
 npm run dev
-` 
+ 
 *The app will be available at http://localhost:5173.*
 
 ### Running the Next.js Port
-` ash
+
 cd swapy-landing/hm36-app
 npm install
 npm run dev
-` 
+
 *The app will run at http://localhost:3000.*
 
 ---
