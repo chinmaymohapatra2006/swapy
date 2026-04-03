@@ -39,7 +39,7 @@ Say goodbye to static, one-way video tutorials. Say hello to interactive, real-t
 - npm or yarn
 
 ### Running the Primary UI (Vite)
-` ash
+
 # 1. Navigate to the frontend directory
 cd swapy-landing
 
