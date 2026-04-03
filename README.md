@@ -32,7 +32,7 @@ Say goodbye to static, one-way video tutorials. Say hello to interactive, real-t
 | /swapy-landing/hm36-app | Experimental Next.js 15 port showcasing server-side capabilities and App Router architecture. |
 | /skill-swap-platform | Preliminary backend architecture and application scaffolding. |
 
-## ??? Getting Started
+##  Getting Started
 
 ### Prerequisites
 - [Node.js](https://nodejs.org/) (v18+ recommended)
@@ -62,5 +62,5 @@ npm run dev
 ---
 *Built for the Hack Matrix - Skill Swap Project*
 
-## ?? Status: Active
+## Status: Active
 Project is currently submitted for the Hackathon.
