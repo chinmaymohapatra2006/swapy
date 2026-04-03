@@ -10,7 +10,7 @@
 
 ---
 
-## ?? Overview & Description
+##  Overview & Description
 **Swapy** is an innovative platform built for a hackathon that matches users for peer-to-peer skill swapping. Instead of static courses, Swapy uses smart tag assessments to pair mentors and learners effectively, creating a dynamic, hands-on collaborative environment.
 
 **How it works:**
@@ -18,14 +18,14 @@ By bridging the gap between individuals with complementary skills, Swapy creates
 
 Say goodbye to static, one-way video tutorials. Say hello to interactive, real-time skill swapping.
 
-## ? Key Features
-- **?? Intelligent Matching:** Evolving profiles automatically match peers based on what they can teach and what they want to learn.
-- **?? Polished UI Engine:** Beautifully crafted with a custom **Liquid-Glass aesthetic**, fully responsive design, and smooth transitions.
-- **?? Deep Theme Support:** Full light and dark mode implementations using Tailwind CSS v4, complete with active CSS mix-blend-mode image blending.
-- **?? Dual Architecture:** Built natively in Vite + React for lightning-fast client rendering, alongside a full Next.js 15 App Router port.
-- **?? Integrated Communications:** Designed with a built-in messenger module UI, featuring text chat and interactive video calling mockups.
+##  Key Features
+- ** Intelligent Matching:** Evolving profiles automatically match peers based on what they can teach and what they want to learn.
+- ** Polished UI Engine:** Beautifully crafted with a custom **Liquid-Glass aesthetic**, fully responsive design, and smooth transitions.
+- ** Deep Theme Support:** Full light and dark mode implementations using Tailwind CSS v4, complete with active CSS mix-blend-mode image blending.
+- ** Dual Architecture:** Built natively in Vite + React for lightning-fast client rendering, alongside a full Next.js 15 App Router port.
+- **Integrated Communications:** Designed with a built-in messenger module UI, featuring text chat and interactive video calling mockups.
 
-## ?? Project Structure
+##  Project Structure
 | Directory | Description |
 |-----------|-------------|
 | /swapy-landing | The primary Vite-based frontend containing the complete feature-set, responsive dashboard, matching algorithms, and UI state. |
