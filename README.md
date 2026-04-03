@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Swapy - The AI-Powered Skill-Swap Platform ??</h1>
+  <h1>Swapy - The AI-Powered Skill-Swap Platform </h1>
   <p><i>Designed to teach. Built to learn.</i></p>
 
   ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
